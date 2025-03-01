@@ -411,22 +411,21 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
 
 /*START OF CONTAINER3////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-
 .container3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 100vh; /* Use min-height instead of height for better flexibility */
+    min-height: 100vh;
     width: 100%;
     background-color: #9B5DE5;
     position: relative;
     overflow: hidden;
-    padding: 20px 0; /* Add padding for better spacing */
+    padding: 20px 0;
 }
 
 .skill-title {
     color: white;
-    margin: 40px 0; /* Combine margin-top and margin-bottom */
+    margin: 40px 0;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
@@ -437,7 +436,7 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
 
 .skill-container {
     height: auto;
-    width: 100%; /* Use 100% width for better responsiveness */
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -447,18 +446,19 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 .skill-icon {
-    width: 100%; /* Use 100% width for better responsiveness */
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem; /* Add gap for better spacing between items */
+    gap: 1rem;
 }
 
 .skill-icon-container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 10px; /* Add margin for better spacing */
+    margin: 10px;
+    text-align: center; /* Center-align text */
 }
 
 .skill {
@@ -482,39 +482,40 @@ body::-webkit-scrollbar {  /* Hide scrollbar for Chrome, Safari and Opera */
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center; /* Center-align text */
+    width: 100%; /* Ensure text container takes full width */
 }
 
 /* Responsive Styles for Mobile Devices */
 @media (max-width: 768px) {
     .container3 {
-        height: auto; /* Allow height to adjust based on content */
-        padding: 20px 10px; /* Add padding for better spacing */
+        height: auto;
+        padding: 20px 10px;
     }
 
     .skill-title {
-        margin: 20px 0; /* Reduce margin for smaller screens */
-        font-size: 1.5rem; /* Adjust font size for mobile */
+        margin: 20px 0;
+        font-size: 1.5rem;
     }
 
     .skill-icon {
-        flex-direction: column; /* Stack items vertically on mobile */
+        flex-direction: column;
         align-items: center;
-        gap: 0.5rem; /* Reduce gap for smaller screens */
+        gap: 0.5rem;
     }
 
     .skill {
-        height: 6rem; /* Reduce size for mobile */
+        height: 6rem;
         width: 6rem;
-        margin: 0; /* Remove horizontal margin */
+        margin: 0;
     }
 
     .skill img {
         height: 50%;
-        width: 50%; /* Adjust image size for mobile */
+        width: 50%;
     }
 
     .skill-icon-container p {
-        font-size: 0.9rem; /* Adjust font size for mobile */
+        font-size: 0.9rem;
     }
 }
 
